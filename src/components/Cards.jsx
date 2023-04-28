@@ -1,7 +1,7 @@
 function Cards({title,description,img}) {
   return (
     <>
-      <div className="mt-4">
+      <a href="#" className="mt-4 cursor-pointer">
         <div className=" flex flex-wrap flex-col justify-center align-middle m-4">
           <img
             className="rounded mb-4"
@@ -9,12 +9,12 @@ function Cards({title,description,img}) {
             src={img}
             alt=""
           />
-          <h5 className="text-xl3 text-bgOrange text-center font-semibold">
+          <h5 className="text-xl3 text-bgOrange text-center font-semibold ">
             {title.toUpperCase()}
           </h5>
           <p className="text-center text-bgWhite ">{description}</p>
         </div>
-      </div>
+      </a>
     </>
   );
 }

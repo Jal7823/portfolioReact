@@ -10,6 +10,7 @@ export default {
         bgBlack:'#212529',
         bgOrange:'#FF5733',
         bgWhite:'#E0E0E0',
+        bgBlue:'#076678',
       }
     },
   },

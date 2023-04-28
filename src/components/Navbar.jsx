@@ -6,11 +6,11 @@ function Navbar() {
 
             <div className="">
                 <ul className="flex text-bgWhite">
-                    <li className="ml-3"><a href="">enlace</a></li>
-                    <li className="ml-3"><a href="">enlace</a></li>
-                    <li className="ml-3"><a href="">enlace</a></li>
-                    <li className="ml-3"><a href="">enlace</a></li>
-                    <li className="ml-3"><a href="">enlace</a></li>
+                    <li className="ml-3 text-bgOrange hover:text-bgWhite "><a href="">About me</a></li>
+                    <li className="ml-3 text-bgOrange hover:text-bgWhite "><a href="">Certifications</a></li>
+                    <li className="ml-3 text-bgOrange hover:text-bgWhite "><a href="">Projects</a></li>
+                    <li className="ml-3 text-bgOrange hover:text-bgWhite "><a href="">Contact me</a></li>
+                    <li className="ml-3 text-bgOrange hover:text-bgWhite "><a href="">Curriculum</a></li>
                 </ul>
             </div>
         </div>

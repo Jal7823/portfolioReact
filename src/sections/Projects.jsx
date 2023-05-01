@@ -14,13 +14,12 @@ function Skills() {
     req();
   }, []);
 
-
   if (projects.length === 0) {
     return (
       <div>
-        <Title title="Certifications" />
+        <Title title="Projects" />
         <p className="text-5xl text-bgWhite text-center">
-        There is nothing to show
+          There is nothing to show
         </p>
       </div>
     );
@@ -28,16 +27,18 @@ function Skills() {
 
   return (
     <>
-      <Title title="Certifications" />
+      <Title title="Projects" id='projects'/>
       <div className="flex justify-around flex-wrap">
         {projects.map((el) => (
-          <Cards
-            key={el.id}
-            title={el.name}
-            description={el.description}
-            img="https://jalberth.pythonanywhere.com/media/projects/medical-services2.jpg"
-            link={el.url}
-          />
+          <div key={el.id}>
+            <Cards
+              title={el.name}
+              description={el.description}
+              img="https://jalberth.pythonanywhere.com/media/projects/medical-services2.jpg"
+              link={el.url}
+            />
+            
+          </div>
         ))}
       </div>
     </>

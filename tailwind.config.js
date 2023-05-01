@@ -11,7 +11,8 @@ export default {
         bgOrange:'#FF5733',
         bgWhite:'#E0E0E0',
         bgBlue:'#076678',
-      }
+      },
+      
     },
   },
   plugins: [],

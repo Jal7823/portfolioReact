@@ -1,6 +1,7 @@
 import { GoOctoface } from 'react-icons/go';
 import { BsLinkedin } from 'react-icons/bs';
 
+
 import Navbar from './sections/Navbar'
 import Description from './sections/Description'
 import Certifications from './sections/Certifications'

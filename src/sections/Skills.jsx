@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
 
-import { SiDjango,SiTailwindcss,SiNodedotjs,SiCss3,SiMysql,SiKubuntu,SiWindows,SiHtml5,SiFlask,SiFastapi } from 'react-icons/si';
+import {
+  SiDjango,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiCss3,
+  SiMysql,
+  SiKubuntu,
+  SiWindows,
+  SiHtml5,
+  SiFlask,
+  SiFastapi,
+} from "react-icons/si";
 
 import Titles from "../components/Titles";
 
@@ -14,7 +25,6 @@ function Skills() {
     };
     req();
   }, []);
-
 
   const getIconByName = (name) => {
     switch (name) {
@@ -39,10 +49,7 @@ function Skills() {
       case "SiFastapi":
         return <SiFastapi />;
 
-
-
-
-          default:
+      default:
         return null;
     }
   };
@@ -59,14 +66,26 @@ function Skills() {
                 src="https://jalberth.pythonanywhere.com/media/skills/JavaScript-logo.png"
                 alt=""
               />
-              <h3 className="text-3xl text-bgOrange text-center">{el.name}</h3>
+              <h3 className="text-3xl text-bgWhite text-center font-medium  p-2 m-4">
+                {el.name}
+              </h3>
+              <hr />
               <ul key={el.id}>
-              {el.library.map((item) => (
-         
-                  <li key={item.id} className="text-bgWhite mt-4 text-center  text-2xl">{getIconByName(item.icon)}</li>
-         
-              ))}
-            </ul>
+                {el.library.map((item) => (
+                  <>
+                    <div className="flex justify-around align-middle items-center">
+
+                      <p className="text-white">{item.name}</p>
+                      <div className="flex align-middle justify-center">
+
+                      <li key={item.id} className="text-bgOrange mt-4 text-center my-auto text-2xl">
+                        {getIconByName(item.icon)}
+                      </li>
+                      </div>
+                    </div>
+                  </>
+                ))}
+              </ul>
             </div>
           );
         })}

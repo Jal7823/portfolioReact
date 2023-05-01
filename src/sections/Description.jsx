@@ -3,7 +3,7 @@ import Titles from "../components/Titles";
 function Description() {
   return (
     <>
-      <Titles title="I am" />
+      <Titles title="I am" id='description' />
       <div className="text-bgWhite text-2xl text-center font-bold m-4">
         I consider myself a self-taught, thoughtful and organized person. I am
         looking for experience that will help build my knowledge in different

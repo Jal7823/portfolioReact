@@ -27,7 +27,7 @@ function Skills() {
 
   return (
     <>
-      <Title title="Certifications" />
+      <Title title="Certifications" id='certifications' />
       <div className="flex justify-around flex-wrap">
         {certf.map((el) => (
           <Cards

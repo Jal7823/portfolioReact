@@ -1,4 +1,4 @@
-import Titles from "./Titles";
+import Titles from "../components/Titles";
 
 function Description() {
   return (
